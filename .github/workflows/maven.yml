@@ -34,3 +34,4 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         buildargs: VERSION,ERROR
         tags: "latest,1.2.5"
+
