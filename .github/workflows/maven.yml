@@ -23,15 +23,3 @@ jobs:
     - name: Build with Maven
       run: ./mvnw test
 
-    - name: Publish to Docker Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
-      env:
-        VERSION: 1.2.5
-        ERROR: no
-      with:
-        name: ozhank/spring-boot-api-demo
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        buildargs: VERSION,ERROR
-        tags: "latest,1.2.5"
-
