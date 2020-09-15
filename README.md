@@ -64,6 +64,7 @@ By default, all tests are ran when the code is built with Maven (ie. `./mvnw cle
 Original Code is forked from https://github.com/BrianMMcClain/spring-boot-api-demo
 ```
 docker run --name spring-api-tekton-demo --rm -it -p 8080:8080 ozhankaraman/spring-api-tekton-demo:latest
+curl http://localhost:8080/items
 ```
 
 
